@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "yolo-seg-eal-new"  # プロジェクト名 (適宜変更してください)
+version = "0.1.0"
+description = "YOLO segmentation with Explainable Active Learning"
+authors = ["Yuji Oyamada <ug.oyamada@gmail.com>"]
+readme = "README.md"
+# アプリケーションとして使用する場合、以下を設定します。
+package-mode = false
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.13"
+
+# --- Core Framework ---
+ultralytics = "8.3.225"
+
+# --- Data Handling & Analysis ---
+pandas = "*"
+numpy = "*"
+umap-learn = "*"
+
+# --- Visualization ---
+plotly = "*"
+
+# --- Utilities ---
+torch = "*"
+torchvision = "*"
+opencv-python-headless = "*"
+pyyaml = "*"
+natsort = "^8.4.0"
+pylint = "^4.0.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
